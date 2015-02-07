@@ -17,10 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var txtLastName: NSTextField!
     @IBOutlet weak var txtFullName: NSTextField!
     
-    var statusBar = NSStatusBar.systemStatusBar()
-    var statusBarItem : NSStatusItem = NSStatusItem()
-    var menu: NSMenu = NSMenu()
-    var menuItem : NSMenuItem = NSMenuItem()
+    
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -33,5 +30,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func buttonConcatenate(sender: AnyObject) {
         txtFullName.stringValue = txtFirstName.stringValue + " " + txtLastName.stringValue
     }
+
 }
 
